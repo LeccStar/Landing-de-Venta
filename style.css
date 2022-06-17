@@ -1,0 +1,28 @@
+.body{
+    height: 100vh;
+    background-image: radial-gradient(white ,#F8E0E0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    margin: 0;
+}
+.header{
+    max-height: 50px;
+    background-color: #7A4949;
+    display: grid;
+    grid-template-columns: 30% auto auto auto auto;
+    line-height: 50px;
+    justify-content: space-around;
+    color: #F8E0E0;
+}
+.logo{
+    max-height: 40px;
+    position: absolute;
+    top: 5px;
+}
+.enlaces1{
+    text-decoration: none;
+    color: #F8E0E0;
+}
+.enlaces1:hover{
+    color: #F99595 ;
+}
