@@ -13,7 +13,7 @@
     <header class="header">
         <a class="enlaces1" href=""><img class="logo" src="./IMG/pngegg.png" alt=""></a>
         <a class="enlaces1" href="">Nosotros</a>
-        <a class="enlaces1" href="">Sercivios</a>
+        <a class="enlaces1" href="">Servicios</a>
         <a class="enlaces1" href="">Contacto</a>
         <a class="enlaces1" href="">Ubicación</a>
     </header>
@@ -21,14 +21,25 @@
         <div class="imgdefondo">
             <div class="texto-de-imagen">
                 <h2>SONRÍE DE LA MEJOR MANERA</h2>
-                <ul>
+                <ul class="listaservicios">
                     <li>Limpieza dental</li>
                     <li>Blanqueamiento</li>
-                    <li>Cirugía de Implantes</li>
+                    <li>Cirugía</li>
                     <li>Resinas dentales</li>
                 </ul>
             </div>
         </div>
+        <form class="form" action="./" method="get">
+            <input type="text" name="name" placeholder="Nombre Completo">
+            <select name="Tratamiento">
+                <option>--Tratamiento--</option>
+                <option>Limpieza dental</option>
+                <option>Blanqueamiento</option>
+                <option>Cirugía</option>
+                <option>Resinas Dentales</option>
+            </select>
+            <input type="email" name="email" placeholder="Correo electrónico">
+        </form>
     </jumbotron>
 </body>
 

@@ -2,6 +2,8 @@
     --color-de-texto: #C6DCE5;
     --color-hover: #83CDEA;
     --color-de-fondo: #91CCDF;
+    --color-de-barra: #395966;
+    --color-form: #2e8690;
 
 }
 .body{
@@ -13,21 +15,21 @@
     margin: 0;
 }
 .header{
-    background-color: #395966;
+    background-color: var(--color-de-barra);
     display: grid;
     grid-template-columns: 30% auto auto auto auto;
-    line-height: 3em;
     justify-content: space-around;
+    align-items: center;
     color: var(--color-de-texto);
 }
 .logo{
     max-height: 2.5em;
-    position: absolute;
-    top: 5px;
+    padding: .5em;
 }
 .enlaces1{
     text-decoration: none;
-    padding-right: 5px;
+    text-align: center;
+    padding-right: .3em;
     color: var(--color-de-texto);
 }
 .enlaces1:hover{
@@ -35,8 +37,9 @@
 }
 .jumbotron{
     display: grid;
-    grid-template-columns: repeat(auto-fill);
+    grid-template-columns: auto auto;
     justify-content: space-around;
+    justify-items: center;
 }
 .imgdefondo{
     background-image: url(./IMG/limpieza-dental-vitoria-dentista.jpg);
@@ -51,12 +54,49 @@
 .texto-de-imagen{
     color: var(--color-de-texto);
     position: absolute;
+    right: 3%;
+    text-align: end;
+}
+.listaservicios{
+    position: absolute;
+    right: 0%;
+    text-align: justify;
+    list-style-type:none;
+}
+li{
+    padding-bottom: .5em;
+}
+li::before{
+    content: "🦷";
+}
+.form{
+    height: 35em;
+    width: 30em;
+    margin-top: 2em;
+    background-color: var(--color-form);
+    border-radius: 25px;
 }
 @media screen and (max-width: 480px){
-    .imgdefondo{
-        width: 95vw;
-    }
     .header{
         display: flex;
+    }
+    .logo{
+        padding: .5em;
+    }
+    .imgdefondo{
+        width: 95vw;
+        margin-top:1em;
+    }
+    .listaservicios{
+        width: 35%;
+        font-size: 0.8em;
+    }
+    .jumbotron{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form{
+        width: 95vw;
     }
 }
