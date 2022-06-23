@@ -16,6 +16,7 @@
 }
 .header{
     background-color: var(--color-de-barra);
+    width: 100vw;
     display: grid;
     grid-template-columns: 30% auto auto auto auto;
     justify-content: space-around;
@@ -37,9 +38,15 @@
 }
 .jumbotron{
     display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-around;
+    background-image: url(./IMG/clinica-dental-en-vitoria.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-template-columns: 40% 60%;
+    gap: 2em;
     justify-items: center;
+    padding: 2em;
+    margin-top: solid 5px;
 }
 .imgdefondo{
     background-image: url(./IMG/limpieza-dental-vitoria-dentista.jpg);
@@ -69,14 +76,28 @@ li{
 li::before{
     content: "🦷";
 }
-.form{
+.formbase{
+    display: grid;
+    grid-template-rows: 30% 10% 40% 20%;
+    text-align: center;
+    align-items: center;
     height: 35em;
-    width: 30em;
+    width: 45em;
     margin-top: 2em;
-    background-color: var(--color-form);
+    background-image: radial-gradient(white ,var(--color-form));
+    border: solid 3px var(--color-form);
     border-radius: 25px;
 }
-@media screen and (max-width: 480px){
+p{
+    text-align: end;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 50%;
+}
+@media screen and (max-width: 992px){
     .header{
         display: flex;
     }
@@ -96,7 +117,8 @@ li::before{
         flex-direction: column;
         align-items: center;
     }
-    .form{
+    .formbase{
         width: 95vw;
+        height: 25em;
     }
 }
