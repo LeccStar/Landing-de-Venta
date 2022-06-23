@@ -1,14 +1,15 @@
 :root{
     --color-de-texto: #C6DCE5;
+    --color-de-texto: #c6dce5;
     --color-hover: #83CDEA;
-    --color-de-fondo: #91CCDF;
+    --color-de-fondo: #a2c2d9;    ;
     --color-de-barra: #395966;
     --color-form: #2e8690;
 
 }
 .body{
     height: 100vh;
-    background-image: radial-gradient(white ,var(--color-de-fondo));
+    background-color: var(--color-de-fondo);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
@@ -16,7 +17,6 @@
 }
 .header{
     background-color: var(--color-de-barra);
-    width: 100vw;
     display: grid;
     grid-template-columns: 30% auto auto auto auto;
     justify-content: space-around;
@@ -39,21 +39,20 @@
 .jumbotron{
     display: grid;
     background-image: url(./IMG/clinica-dental-en-vitoria.jpg);
-    background-position: top;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     grid-template-columns: 40% 60%;
-    gap: 2em;
     justify-items: center;
-    padding: 2em;
-    margin-top: solid 5px;
+    align-items: center;
+    padding: 1.5em;
 }
 .imgdefondo{
     background-image: url(./IMG/limpieza-dental-vitoria-dentista.jpg);
     background-size: cover;
     background-position: bottom;
     height: 35em;
-    width: 30em;
+    width: 70%;
     border-radius: 25px;
     margin-top: 2em;
     position: relative;
@@ -82,20 +81,49 @@ li::before{
     text-align: center;
     align-items: center;
     height: 35em;
-    width: 45em;
+    width: 80%;
     margin-top: 2em;
-    background-image: radial-gradient(white ,var(--color-form));
-    border: solid 3px var(--color-form);
+    background-color: var(--color-form);
+    color: var(--color-de-texto);
     border-radius: 25px;
 }
-p{
-    text-align: end;
-}
+
 .form{
     display: flex;
+    height: 100%;
+    width: 100%;
     flex-direction: column;
-    margin: auto;
-    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+.formletras{
+    padding-right: 1.5em;
+    padding-left: 25%;
+    font-size: smaller;
+    text-align: end;
+    background-color: var(--color-de-barra);
+}
+.formcuadros{
+    background-color: var(--color-de-barra);
+    color: var(--color-de-texto);
+    height: 15%;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+}
+.btn:hover{
+    color: var(--color-hover);
+}
+::placeholder{
+    color:var(--color-de-texto);
+    opacity: 0.5;
+}
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5em;
+    margin: 3em;
 }
 @media screen and (max-width: 992px){
     .header{
@@ -116,9 +144,10 @@ p{
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-image: none;
     }
     .formbase{
         width: 95vw;
-        height: 25em;
+        height:35em;
     }
 }
