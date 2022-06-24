@@ -120,10 +120,57 @@ li::before{
     opacity: 0.5;
 }
 .blog{
+    margin: 3em;
+    text-align: center;
+    color: var(--color-de-barra);
+}
+.blogcontainer{
     display: flex;
     flex-wrap: wrap;
     gap: 5em;
-    margin: 3em;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.articulo{
+    text-decoration: none;
+    color: var(--color-de-texto);
+    height: 25em;
+    width: 25%;
+    background-color: var(--color-de-barra);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 10px 10px 10px var(--color-de-texto) ;
+}
+.img{
+    background-image: url(./IMG/LIMPIEZA-BUCAL-CON-ULTRASONIDOS-1536x667.webp);
+    background-size: cover;
+    background-position: right;
+    height: 50%;
+}
+.img2{
+    background-image: url(./IMG/1000_F_306316404_9kqNZ2hDfQEDjtHx1iXY4Kwja2nQF4vF.jpg);
+    background-size: cover;
+    background-position: right;
+    height: 50%;
+}
+.img3{
+    background-image: url(./IMG/dentista-dibujos-animados-mascara-examinando-boca-abierta-paciente_74855-19714.webp);
+    background-size: cover;
+    background-position: right;
+    height: 50%;
+}
+.articulotitulo{
+    font-size: 1em;
+}
+.lorem{
+    text-align: justify;
+    height: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: .9em;
+    overflow-y: hidden;
 }
 @media screen and (max-width: 992px){
     .header{
@@ -145,9 +192,16 @@ li::before{
         flex-direction: column;
         align-items: center;
         background-image: none;
+        padding: 0;
     }
     .formbase{
         width: 95vw;
         height:35em;
+    }
+    .blog{
+        margin: 1em;
+    }
+    .articulo{
+        width: 90vw;
     }
 }
