@@ -33,9 +33,6 @@
     padding-right: .3em;
     color: var(--color-de-texto);
 }
-.enlaces1:hover{
-    color: var(--color-hover) ;
-}
 .jumbotron{
     display: grid;
     background-image: url(./IMG/clinica-dental-en-vitoria.jpg);
@@ -97,8 +94,7 @@ li::before{
     align-items: center;
 }
 .formletras{
-    padding-right: 1.5em;
-    padding-left: 25%;
+    padding: 0% 3% 0% 25%;
     font-size: smaller;
     text-align: end;
     background-color: var(--color-de-barra);
@@ -151,26 +147,56 @@ li::before{
 }
 .img2{
     background-image: url(./IMG/1000_F_306316404_9kqNZ2hDfQEDjtHx1iXY4Kwja2nQF4vF.jpg);
-    background-size: cover;
-    background-position: right;
-    height: 50%;
 }
 .img3{
     background-image: url(./IMG/dentista-dibujos-animados-mascara-examinando-boca-abierta-paciente_74855-19714.webp);
-    background-size: cover;
-    background-position: right;
-    height: 50%;
 }
 .articulotitulo{
     font-size: 1em;
 }
 .lorem{
+    display: flex;
+    align-items: center;
     text-align: justify;
-    height: 30%;
     padding-left: 5%;
     padding-right: 5%;
     font-size: .9em;
     overflow-y: hidden;
+}
+.adicionalesbase{
+    grid-template-columns: 1fr 1fr;
+    background-image: none;
+    background-color: var(--color-form);
+    padding: 0rem 1.5em 0em 0em;
+    color:var(--color-de-texto);
+}
+.dientegrande{
+    background-image: url(./IMG/WhatsApp\ Image\ 2022-06-24\ at\ 11.59.40\ AM.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    width: 100%;
+    height: 100vh;
+}
+.acerca{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 3vh;
+    padding: 0% 10% 0% 10%;
+}
+.parrafo{
+    text-align: justify;
+}
+.btn2{
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--color-de-barra);
+    margin: 0px auto 5% auto;
+    padding: 3%;
+    border-radius: 15%;
 }
 @media screen and (max-width: 992px){
     .header{
@@ -197,11 +223,22 @@ li::before{
     .formbase{
         width: 95vw;
         height:35em;
+        margin-bottom: 1em;
     }
     .blog{
-        margin: 1em;
+        margin: 1.5em;
+    }
+    .blogcontainer{
+        gap: 3em;
     }
     .articulo{
         width: 90vw;
+    }
+    .dientegrande{
+        height: 35vh;
+    }
+    .acerca{
+        height: 64vh;
+        font-size: 1.7vh;
     }
 }
