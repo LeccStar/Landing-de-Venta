@@ -1,20 +1,21 @@
-:root{
+:root {
     --color-de-texto: #C6DCE5;
-    --color-de-texto: #c6dce5;
+    --color-de-texto: white;
     --color-hover: #83CDEA;
-    --color-de-fondo: #a2c2d9;    ;
+    --color-de-fondo: #a2c2d9;
+    ;
     --color-de-barra: #395966;
     --color-form: #2e8690;
 
 }
-.body{
+.body {
     background-color: var(--color-de-fondo);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
 }
-.header{
+.header {
     background-color: var(--color-de-barra);
     display: grid;
     grid-template-columns: 30% auto auto auto auto;
@@ -22,17 +23,17 @@
     align-items: center;
     color: var(--color-de-texto);
 }
-.logo{
+.logo {
     max-height: 2.5em;
     padding: .5em;
 }
-.enlaces1{
+.enlaces1 {
     text-decoration: none;
     text-align: center;
     padding-right: .3em;
     color: var(--color-de-texto);
 }
-.jumbotron{
+.jumbotron {
     display: grid;
     background-image: url(./IMG/clinica-dental-en-vitoria.jpg);
     background-position: center;
@@ -43,7 +44,7 @@
     align-items: center;
     padding: 1.5em;
 }
-.imgdefondo{
+.imgdefondo {
     background-image: url(./IMG/limpieza-dental-vitoria-dentista.jpg);
     background-size: cover;
     background-position: bottom;
@@ -53,25 +54,22 @@
     margin-top: 2em;
     position: relative;
 }
-.texto-de-imagen{
+.texto-de-imagen {
     color: var(--color-de-texto);
     position: absolute;
     right: 3%;
     text-align: end;
 }
-.listaservicios{
+.listaservicios {
     position: absolute;
     right: 0%;
     text-align: justify;
-    list-style-type:none;
+    list-style-type: none;
 }
-li{
+li {
     padding-bottom: .5em;
 }
-li::before{
-    content: "🦷";
-}
-.formbase{
+.formbase {
     display: grid;
     grid-template-rows: 30% 10% 40% 20%;
     text-align: center;
@@ -83,8 +81,7 @@ li::before{
     color: var(--color-de-texto);
     border-radius: 25px;
 }
-
-.form{
+.form {
     display: flex;
     height: 100%;
     width: 100%;
@@ -92,13 +89,11 @@ li::before{
     justify-content: space-around;
     align-items: center;
 }
-.formletras{
-    padding: 0% 3% 0% 25%;
+.formletras {
     font-size: smaller;
-    text-align: end;
     background-color: var(--color-de-barra);
 }
-.formcuadros{
+.formcuadros {
     background-color: var(--color-de-barra);
     color: var(--color-de-texto);
     height: 15%;
@@ -107,19 +102,19 @@ li::before{
     text-align: center;
     border: none;
 }
-.btn:hover{
+.btn:hover {
     color: var(--color-hover);
 }
-::placeholder{
-    color:var(--color-de-texto);
+::placeholder {
+    color: var(--color-de-texto);
     opacity: 0.5;
 }
-.blog{
+.blog {
     margin: 3em;
     text-align: center;
     color: var(--color-de-barra);
 }
-.blogcontainer{
+.blogcontainer {
     display: flex;
     flex-wrap: wrap;
     gap: 5em;
@@ -127,7 +122,7 @@ li::before{
     margin-top: 2em;
     margin-bottom: 2em;
 }
-.articulo{
+.articulo {
     text-decoration: none;
     color: var(--color-de-texto);
     height: 25em;
@@ -136,24 +131,24 @@ li::before{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    box-shadow: 0px 10px 10px 10px var(--color-de-texto) ;
+    box-shadow: 0px 10px 10px 10px var(--color-de-texto);
 }
-.img{
+.img {
     background-image: url(./IMG/LIMPIEZA-BUCAL-CON-ULTRASONIDOS-1536x667.webp);
     background-size: cover;
     background-position: right;
     height: 50%;
 }
-.img2{
+.img2 {
     background-image: url(./IMG/1000_F_306316404_9kqNZ2hDfQEDjtHx1iXY4Kwja2nQF4vF.jpg);
 }
-.img3{
+.img3 {
     background-image: url(./IMG/dentista-dibujos-animados-mascara-examinando-boca-abierta-paciente_74855-19714.webp);
 }
-.articulotitulo{
+.articulotitulo {
     font-size: 1em;
 }
-.lorem{
+.lorem {
     display: flex;
     align-items: center;
     text-align: justify;
@@ -162,14 +157,14 @@ li::before{
     font-size: .9em;
     overflow-y: hidden;
 }
-.adicionalesbase{
+.adicionalesbase {
     grid-template-columns: 1fr 1fr;
     background-image: none;
     background-color: var(--color-form);
     padding: 0rem 1.5em 0em 0em;
-    color:var(--color-de-texto);
+    color: var(--color-de-texto);
 }
-.dientegrande{
+.dientegrande {
     background-image: url(./IMG/WhatsApp\ Image\ 2022-06-24\ at\ 11.59.40\ AM.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,7 +172,7 @@ li::before{
     width: 100%;
     height: 100vh;
 }
-.acerca{
+.acerca {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -186,10 +181,10 @@ li::before{
     font-size: 1.2em;
     padding: 0% 10% 0% 10%;
 }
-.parrafo{
+.parrafo {
     text-align: justify;
 }
-.btn2{
+.btn2 {
     text-decoration: none;
     color: inherit;
     background-color: var(--color-de-barra);
@@ -197,47 +192,99 @@ li::before{
     padding: 3%;
     border-radius: 15%;
 }
-@media screen and (max-width: 992px){
-    .header{
+.footercontainer {
+    background-color: var(--color-de-barra);
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+.iconoscontainer {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.iconos {
+    background-size: cover;
+    height: 3em;
+    width: 3em;
+    opacity: 0.7;
+    filter: invert();
+    margin: 2em;
+}
+.facebook {
+    background-image: url(./IMG/733603.png);
+}
+.instagram {
+    background-image: url(./IMG/87390.png);
+}
+.whatsapp {
+    background-image: url(./IMG/733641.png);
+}
+.messenger {
+    background-image: url(./IMG/733604.png);
+}
+.infocontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    color: var(--color-de-texto);
+    opacity: 0.7;
+    margin: 0 10% 2% 10%;
+    gap: 5%;
+}
+@media screen and (max-width: 992px) {
+    .header {
         display: flex;
     }
-    .logo{
+    .logo {
         padding: .5em;
     }
-    .imgdefondo{
+    .imgdefondo {
         width: 95vw;
-        margin-top:1em;
+        margin-top: 1em;
     }
-    .listaservicios{
+    .listaservicios {
         width: 35%;
         font-size: 0.8em;
     }
-    .jumbotron{
+    .jumbotron {
         display: flex;
         flex-direction: column;
         align-items: center;
         background-image: none;
         padding: 0;
     }
-    .formbase{
+    .formbase {
         width: 95vw;
-        height:35em;
+        height: 35em;
         margin-bottom: 1em;
     }
-    .blog{
+    .blog {
         margin: 1.5em;
     }
-    .blogcontainer{
+    .blogcontainer {
         gap: 3em;
     }
-    .articulo{
+    .articulo {
         width: 90vw;
     }
-    .dientegrande{
+    .dientegrande {
         height: 35vh;
     }
-    .acerca{
+    .acerca {
         height: 64vh;
         font-size: 1em;
+    }
+    .iconos {
+        width: 2em;
+        height: 2em;
+        margin: 1em;
+    }
+    .infocontainer {
+        font-size: .6em;
+        flex-wrap: wrap;
+        text-align: left;
+        justify-content: space-between;
     }
 }
